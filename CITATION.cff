@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: If you use this software, please cite the accompanying dissertation.
+title: "Paged Precision: Improving the TurboQuant-MSE KV-Cache Frontier"
+type: software
+authors:
+  - family-names: Sheikh
+    given-names: Uzair Hussain
+    email: ec25165@qmul.ac.uk
+version: 0.2.0
+date-released: 2026-08-18
+license: MIT
+keywords:
+  - KV cache
+  - quantization
+  - LLM inference

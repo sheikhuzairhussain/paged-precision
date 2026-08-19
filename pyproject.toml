@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paged-precision"
+version = "0.2.0"
+description = "Runtime-selective mixed precision for TurboQuant-MSE KV caches."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Uzair Hussain Sheikh", email = "ec25165@qmul.ac.uk" }]
+keywords = ["llm", "kv-cache", "quantization", "inference", "memory"]
+dependencies = [
+    "modal==1.5.1",
+    "pyyaml==6.0.3",
+    "torch==2.12.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.1.1",
+    "ruff==0.15.20",
+]
+
+[project.scripts]
+paged-precision = "paged_precision.cli:main"
+paged-precision-full = "paged_precision.cli:full_main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"

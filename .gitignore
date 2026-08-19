@@ -1,0 +1,27 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+.DS_Store
+build/
+dist/
+wheels/
+*.egg-info
+tmp/
+.cache/
+.claude/
+
+# Virtual environments
+.venv
+
+# Local secrets
+.env
+.modal.toml
+
+# Material retained only in the private submission archive
+paper/
+guidelines/
+output/
+scripts/*
+!scripts/run_full_b200.py
+
+.tmp/

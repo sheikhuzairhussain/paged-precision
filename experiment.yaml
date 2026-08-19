@@ -1,0 +1,15 @@
+seed: 7
+models:
+  - name: mistral
+    model_id: mistralai/Mistral-7B-Instruct-v0.3
+  - name: llama
+    model_id: meta-llama/Llama-3.1-8B-Instruct
+dataset: Salesforce/wikitext
+subset: wikitext-103-raw-v1
+split: test
+context_tokens: 8192
+score_tokens: 256
+windows: 30
+gpu: B200
+residual_residency: [0, 0.1, 0.25, 0.5, 1]
+policies: [sink, recent, attention_ema]
